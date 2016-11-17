@@ -4,7 +4,7 @@
 
 @implicitField = @{ FieldConstructor(bootstrapFieldConstructorTemplate.f) }
 
-@main("I can change things") {
+@main("something else") {
 
     <h1>Configure your 'Hello world':</h1>
 
@@ -12,7 +12,7 @@
 
         @inputText(
             field = helloForm("name"),
-            args = '_label -> "What's your name?", 'placeholder -> "here goes your name", 'class -> "form-control"
+            args = '_label -> "What's your name?", 'placeholder -> "your name", 'class -> "form-control"
         )
 
         @inputText(
@@ -27,7 +27,8 @@
                 "red" -> "Red",
                 "green" -> "Green",
                 "blue" -> "Blue",
-                "yellow" -> "Yellow"
+                
+
             ),
             args = '_label -> "Choose a color", 'class -> "form-control"
         )
